@@ -1,0 +1,731 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 12px;
+  background-color: #ffff;  
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+
+/*Header*/
+.header-app-container{
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-section-header{
+  width: 370px;
+  height: 120px;
+  background: rgba(6, 37, 79, 0.6);
+  border: 2px solid gold;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title-app-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title{
+  color: gold;
+  font-size: 20px;
+  text-align: center;
+  margin: 3px;
+}
+.sub-title{
+  color: gold;
+  font-size: 16px;
+  text-align: center;
+}
+.get-num-rows-container{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-get-rows{
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/*STYLES SECOND-MOMENT-DATES-NOT-GROUPED*/
+/*Table Dates*/
+.table-dates-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.table-dates{
+  min-width: 20%;
+  max-width: 90%;
+  height: auto;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background: rgba(6, 37, 79, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 15px;
+}
+.row-date-container{
+  width: max-content;
+  height: 42px;
+  margin: 5px;
+}
+.row-date{
+  width: 40px;
+  height: 40px;
+  border: 1px solid gold;
+  outline: none;
+  border-radius: 5px;
+  background: transparent;
+  color: gold;
+  font-size: 15px;
+  text-align: center;
+  margin: 5px;
+}
+
+/*Table Results*/
+.show-results-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.show-results{
+  min-width: 60%;
+  max-width: 90%;
+  height: auto;
+  background: rgba(6, 37, 79, 0.6);
+  border: 2px solid gold;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.show-results>span{
+  color: gold;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+/*Copyright*/
+.copyright-container{
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+}
+.image-copyright{
+  width: 100px;
+  height: 110px;
+}
+.description-copyright{
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.name-copyright{
+  color: #fff;
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+}
+.leyend-copyright{
+  color: #fff;
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+}
+
+
+/*STYLES-SECOND-MOMENT-DATES-GROUPED*/
+.table-sm-dtg-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-sm-sections{
+  width: 90%;
+  height: auto;
+  background: rgba(6, 37, 79, 0.6);
+  border: 2px solid gold;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sections-top-table-sm-dg{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sections-top-table-sm-dg>div{
+  width: 80px;
+  height: 40px;
+  border: 1px solid gold;
+  background: transparent;
+  color: gold;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.sections-mid-table-sm-dg{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.sections-mid-table-sm-dg>div{
+  width: 80px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sections-mid-table-sm-dg>div>div{
+  width: 80px;
+  height: 40px;
+  border: 1px solid gold;
+  color: gold;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+  overflow-x: scroll;
+}
+.sections-mid-table-sm-dg>div>div::-webkit-scrollbar{
+  display: none;
+}
+.sections-mid-table-sm-dg>div>input{
+  width: 80px;
+  height: 40px;
+  border: 1px solid gold;
+  color: gold;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+}
+
+.sections-mid-table-mof-dg{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.sections-mid-table-mof-dg>div{
+  width: 80px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sections-mid-table-mof-dg>div>div{
+  width: 80px;
+  height: 40px;
+  border: 1px solid gold;
+  color: gold;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+  overflow-x: scroll;
+}
+.sections-mid-table-mof-dg>div>div::-webkit-scrollbar{
+  display: none;
+}
+.sections-mid-table-mof-dg>div>input{
+  width: 80px;
+  height: 40px;
+  border: 1px solid gold;
+  color: gold;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+}
+/*Table-results-sm-dg*/
+.show-results-sm-dg-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.show-results-sm-dg-sections{
+  width: 90%;
+  height: auto;
+  border: 2px solid gold;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: rgba(6, 37, 79, 0.6);
+}
+.show-results-sm-dg-sections>div{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+  font-size: 16px;
+}
+
+
+/*Styles dates not grouped measures of dispersion*/
+.table-dates-not-grouped-mof-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-dates-not-grouped-mof-sections{
+  width: 90%;
+  height: auto;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background: rgba(6, 37, 79, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-rows-dates-not-grouped-mof{
+  width: inherit;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.section-rows-dates-not-grouped-mof>input{
+  width: 60px;
+  height: 40px;
+  border: 1px solid gold;
+  color: gold;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+  margin: 3px;
+}
+.table-results-dng-mof-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.table-results-dng-mof-sections{
+  width: 90%;
+  height: auto;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background: rgba(6, 37, 79, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.table-results-dng-mof-sections>div{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+.table-results-dg-mod-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.table-results-dg-mod-sections{
+  width: 90%;
+  height: auto;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background: rgba(6, 37, 79, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.table-results-dg-mod-sections>div{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+
+
+/*Styles Curtosis*/
+.table-curtosis-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-curtosis-sections{
+  width: 90%;
+  height: auto;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background: rgba(6, 37, 79, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.table-curtosis-section-rows-top{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-curtosis-section-rows-top>div{
+  width: 100px;
+  height: 40px;
+  border: 1px solid gold;
+  color: gold;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+}
+.table-curtosis-section-rows-mid{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.table-curtosis-section-rows-mid>div{
+  width: 100px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.table-curtosis-section-rows-mid>div>input{
+  width: 100px;
+  height: 40px;
+  border: 1px solid gold;
+  color: gold;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+}
+.table-curtosis-section-rows-mid>div>div{
+  width: 100px;
+  height: 40px;
+  border: 1px solid gold;
+  color: gold;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+  overflow-x: scroll;
+}
+.table-curtosis-section-rows-mid>div>div::-webkit-scrollbar{
+  display: none;
+}
+.table-show-results-curtosis{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.table-show-results-sections-curtosis{
+  width: 90%;
+  height: auto;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background: rgba(6, 37, 79, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.table-show-results-sections-curtosis>div{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/*Styles-Table-frequemcy*/
+
+/*Styles-header-table-frecuency*/
+.header-table-frequency-container{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hader-table-frequency-sections{
+  width: 400px;
+  height: 150px;
+  border: 2px solid gold;
+  background-color: rgba(6, 37, 79, 0.6);
+  border-radius: 10px;
+}
+.section-title-table-frequency{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+  font-size: 18px;
+}
+.section-get-nums{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-get-nums>input{
+  width: 220px;
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin: 5px;
+  text-align: center;
+}
+/*Styñes-table-frencucy-tables*/
+.table-get-dates-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-get-dates-inputs{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid gold;
+  background-color: rgba(6, 37, 79, 0.6);
+  justify-content: center;
+  padding: 10px;
+}
+.get-dates-frequency{
+  width: 40px;
+  height: 40px;
+  border: 1px solid gold;
+  outline: none;
+  background: transparent;
+  color: gold;
+}
+.show-dates-table-frequency-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.show-dates-frequency-sections{
+  width: 90%;
+  height: auto;
+  border: 2px solid gold;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(6, 37, 79, 0.6);
+}
+.show-dates-frequency-sections>div{
+  width: 100%;
+  height: 40px;
+  color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+/*Styles show results table*/
+.results-table-frequency-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.results-table-frequency-container > canvas{
+  margin-top: 50px;
+}
+.results-table-frequency-sections{
+  width: 90%;
+  height: auto;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background-color: rgba(6, 37, 79, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+.results-table-frequency-seciton-top{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.results-table-frequency-seciton-top>div{
+  width: 80px;
+  height: 40px;
+  border: 1px solid gold;
+  color: gold;
+  font-size: 14px;
+  text-align: center;
+}
+.results-table-frequency-seciton-mid{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.results-table-frequency-seciton-mid>div{
+  width: 80px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.results-table-frequency-seciton-mid>div>div{
+  width: 100%;
+  height: 40px;
+  border: 1px solid gold;
+  color: gold;
+  font-size: 14px;
+  overflow-x: scroll;
+}
+.results-table-frequency-seciton-mid>div>div::-webkit-scrollbar{
+  display: none;
+}
+
+
+/*Styles background pages*/
+.ug-escudo-background-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+  opacity: .6;
+}
+.ug-escudo-background{
+  width: 300px;
+  height: 250px;
+}
+
+
+/*STYLES-SEND-BUTTOM*/
+.send-buttom-container{
+  width: 30%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+.send-data-btn{
+  width: 150px;
+  height: 100%;
+  outline: none;
+  font-size: 14px;
+  background-color: #1A5276;
+  border: 1px solid gold;
+  color: gold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.send-tables-btns-container{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

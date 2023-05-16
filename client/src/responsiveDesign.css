@@ -1,0 +1,189 @@
+/*MediaQuery for Tablets*/
+@media (max-width: 900px) {
+    .title-header-container{
+        justify-content: center;
+    }
+    .description-app-background{
+        align-items: center;
+    }
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(2,300px);
+        justify-items: end;
+        justify-content: end;
+        align-items: center;
+        align-content: space-evenly;
+    }
+    .logo-enmsl{
+        width: 70%;
+        height: 90px;
+    }
+    .form-suggestions{
+        width: 300px;
+    }
+    .author-name{
+        font-size: 25px;
+    }
+    .logo-ug{
+        width: 120px;
+        height: 100px;
+    }
+    .footer-container{
+        height: 400px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer>div{
+        width: 100%;
+    }
+    .footer::before{
+        height: 400px;
+    }
+}
+
+
+
+/*MediaQuery for mobile*/
+
+@media (max-width: 500px) {
+    .title-header{
+        width: 100%;
+        height: 100px;
+        font-size: 20px;
+    }
+    .title-header>h3{
+        font-size: 40px;
+        text-align: center;
+    }
+    .image-main-header-container{
+        width: 100%;
+    }
+    .image-main-header{
+        width: 150px;
+        height: 120px;
+    }
+    .image-state{
+        width: 100%;
+        height: 420px;
+    }
+    .title-description-app{
+        font-size: 20px;
+    }
+    .description-app{
+        font-size: 18px;
+    }
+    .description-app-background{
+        margin-top: 0;
+        align-items: center;
+    }
+    .description-app-container{
+        height: 770px;
+    }
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .card-topic-container{
+        width: 250px;
+        height: 150px;
+        margin: 10px;
+    }
+    .card-topic-sections{
+        width: 250px;
+        height: 150px;
+    }
+    .btn-go-topic{
+        width: 120px;
+    }
+    .footer-container{
+        height: 400px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer>div{
+        width: 100%;
+    }
+    .footer::before{
+        height: 400px;
+    }
+    .logo-enmsl{
+        width: 90%;
+        height: 90px;
+    }
+    .form-suggestions{
+        width: 300px;
+    }
+    .author-name{
+        font-size: 20px;
+    }
+    .logo-ug{
+        width: 100px;
+        height: 80px;
+    }
+
+    /*Styles responsive tables*/
+    .sections-top-table-sm-dg>div{
+        width: 45px;
+        font-size: 12px;
+    }
+    .sections-mid-table-sm-dg>div{
+        width: 45px;
+    }
+    .sections-mid-table-sm-dg>div>div{
+        width: 45px;
+    }
+    .sections-mid-table-sm-dg>div>input{
+        width: 45px;
+    }
+
+    .sections-mid-table-mof-dg>div{
+        width: 40px;
+        font-size: 12px;
+    }
+    .sections-mid-table-mof-dg>div{
+        width: 40px;
+    }
+    .sections-mid-table-mof-dg>div>div{
+        width: 40px;
+    }
+    .sections-mid-table-mof-dg>div>input{
+        width: 40px;
+    }
+
+    .table-curtosis-section-rows-mid>div{
+        width: 60px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .table-curtosis-section-rows-mid>div>input{
+        width: 60px;
+        height: 40px;
+        border: 1px solid gold;
+        color: gold;
+        background-color: transparent;
+        outline: none;
+        font-size: 16px;
+      }
+      .table-curtosis-section-rows-mid>div>div{
+        width: 60px;
+      }
+      .table-curtosis-section-rows-top>div{
+        width: 60px;
+      }
+      .send-buttom-container{
+        width: 50%;
+      }
+}
+
+
+
+
+
